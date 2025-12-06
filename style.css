@@ -5,16 +5,59 @@
  SemiBold 600 
  ExtraBold 800 
 */
-
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
 
     font-family: "Montserrat", serif;
     color: #d9d9d9;
 
+    font-size: 20px;
+    line-height: 163%;
+    letter-spacing: -0.02em;
+
+
+
     background-color: #121517;
 }
 
-h1, h2 {
+h1, h2 { 
     font-weight: 800;
+}
+
+a{
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.container {
+    min-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 50px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: baseline;
+    gap: 95px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 37px;
+    letter-spacing: -0.03em;
+    background: linear-gradient(223deg, #237249 0%, #35c66b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header__link + .header__link {
+    margin-left: 95px;
 }
